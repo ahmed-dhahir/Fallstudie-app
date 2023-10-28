@@ -1,1 +1,24 @@
+/* Resetting some default browser styles for consistency */
+body, h1, p, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+.container {
+    max-width: 480px; /* Adjust this for the desired mobile screen width */
+    margin: 0 auto; /* Centers the app on desktop */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
