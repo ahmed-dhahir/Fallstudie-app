@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fallstudie App</title>
-    <link rel="stylesheet" href="Fallstudie-app/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/app.js"></script>
 </head>
 
@@ -13,7 +13,7 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <h1>Fallstudie App</h1>
+            <h1>Allergy Helper</h1>
         </header>
 
         <!-- Main content area -->
@@ -23,23 +23,27 @@
                 Discover foods and related allergies quickly and easily.
             </p>
 
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search for food or allergy...">
-                <button>Search</button>
-            </div>
-
-            <!-- Quick Links/Buttons -->
-            <div class="quick-links">
-                <button>Popular Foods</button>
-                <button>Common Allergies</button>
-            </div>
+            
 
             <!-- Start or Enter Button -->
             <div class="start-section">
-                <button class="start-button">Enter App</button>
+                <button class="start-button">Start App</button>
             </div>
         </main>
+
+                <!-- Intolerances Section (Initially Hidden) -->
+        <div class="intolerance-section" style="display: none;">
+            <h2>Select Intolerances</h2>
+            <ul class="intolerance-list">
+                <li><input type="checkbox" id="laktose"> <label for="laktose">Laktose-Intoleranz</label></li>
+                <li><input type="checkbox" id="gluten"> <label for="gluten">Gluten-Intoleranz</label></li>
+                <li><input type="checkbox" id="fruktose"> <label for="fruktose">Fruktose-Intoleranz</label></li>
+                <li><input type="checkbox" id="histamin"> <label for="histamin">Histamin-Intoleranz</label></li>
+                <li><input type="checkbox" id="sorbit"> <label for="sorbit">Sorbit-Intoleranz</label></li>
+            </ul>
+            <button class="save-button">Done</button>
+        </div>
+
 
         <!-- Footer, if needed -->
         <footer>
